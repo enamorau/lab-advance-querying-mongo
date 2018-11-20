@@ -45,6 +45,7 @@ limit 10
 sort {$and: [{"number_of_employees": {$gte:100}},{"number_of_employees":{$lt:1000}}]}
 project: {_id:0,name:1, number_of_employees:1}
 
+
 ### 9. Order all the companies by their IPO price descendently.
 
 sort {$and:     [{"ipo.valuation_amount": {$exists: true}},{"ipo.valuation_amount":{$ne:null}}]}
@@ -58,7 +59,7 @@ sort {number_of_employees:-1}
 
 ### 11. All the companies founded on the second semester of the year. Limit your search to 1000 companies.
 
-<!-- Your Code Goes Here -->
+
 
 ### 12. All the companies that have been 'deadpooled' after the third year.
 
